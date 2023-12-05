@@ -8,7 +8,7 @@
 	font-size: 48px;
 	text-align: center;
 	margin:  0 auto;
-	font-family: sans-serif;
+	border: 2px solid #000;
 }
 .startButton{
 	position: absolute;
@@ -39,7 +39,7 @@
 	transition:0.3s;
 }
 body { 
-	background: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%); 
+	background: linear-gradient(-225deg, #2cd893 0%, #2f61e2 100%); 
 }
 p{
 	position: absolute;
