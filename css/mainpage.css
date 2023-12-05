@@ -1,4 +1,4 @@
-.title{
+.title {
 	position: absolute;
 	top: 21%;
 	left: 28%;
@@ -7,10 +7,11 @@
 	width: 42%;
 	font-size: 48px;
 	text-align: center;
-	margin:  0 auto;
+	margin: 0 auto;
 	border: 2px solid #000;
 }
-.startButton{
+
+.startButton {
 	position: absolute;
 	top: 50%;
 	left: 39%;
@@ -20,11 +21,13 @@
 	font-size: 48px;
 	text-align: center;
 }
-.startButton:hover{
-	opacity:0.5;
-	transition:0.3s;
+
+.startButton:hover {
+	opacity: 0.5;
+	transition: 0.3s;
 }
-.studyButton{
+
+.studyButton {
 	position: absolute;
 	top: 68%;
 	left: 39%;
@@ -34,17 +37,16 @@
 	font-size: 48px;
 	text-align: center;
 }
-.studyButton:hover{
-	opacity:0.5;
-	transition:0.3s;
+
+.studyButton:hover {
+	opacity: 0.5;
+	transition: 0.3s;
 }
-body { 
-	background: linear-gradient(-225deg, #2cd893 0%, #2f61e2 100%); 
-}
-p{
+
+p {
 	position: absolute;
-	top:50%;
+	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
-	margin:  auto;
+	transform: translate(-50%, -50%);
+	margin: auto;
 }
