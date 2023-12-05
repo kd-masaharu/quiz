@@ -6,13 +6,14 @@
 	height: 15%;
 	width: 77%;
 	border: 2px solid #000;
+	font-size: 48px;
 }
 
-#textbox2 {
+.textbox2 {
 	position: absolute;
 	top: 4%;
 	left: 6%;
-	background-color: skyblue;
+	background-color: white;
 	height: 8%;
 	width: 15%;
 	border: 2px solid #000;
@@ -25,13 +26,14 @@
 	background-color: brown;
 	height: 8%;
 	width: 80%;
+	font-size: 24px;
 }
 
 .button1 {
 	position: absolute;
 	top: 60%;
 	left: 9%;
-	background-color: purple;
+	background-color: white;
 	height: 12%;
 	width: 30%;
 	border: 2px solid #000;
@@ -41,7 +43,7 @@
 	position: absolute;
 	top: 60%;
 	left: 60%;
-	background-color: green;
+	background-color: white;
 	height: 12%;
 	width: 30%;
 	border: 2px solid #000;
@@ -51,7 +53,7 @@
 	position: absolute;
 	top: 80%;
 	left: 9%;
-	background-color: yellow;
+	background-color: white;
 	height: 12%;
 	width: 30%;
 	border: 2px solid #000;
@@ -61,10 +63,14 @@
 	position: absolute;
 	top: 80%;
 	left: 60%;
-	background-color: darkblue;
+	background-color: white;
 	height: 12%;
 	width: 30%;
 	border: 2px solid #000;
+}
+
+.btn {
+	font-size: 34px;
 }
 
 .textEl {
