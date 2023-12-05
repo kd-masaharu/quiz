@@ -1,0 +1,50 @@
+.title{
+	position: absolute;
+	top: 21%;
+	left: 28%;
+	background-color: white;
+	height: 21%;
+	width: 42%;
+	font-size: 48px;
+	text-align: center;
+	margin:  0 auto;
+	font-family: sans-serif;
+}
+.startButton{
+	position: absolute;
+	top: 50%;
+	left: 39%;
+	background-color: white;
+	height: 12%;
+	width: 21%;
+	font-size: 48px;
+	text-align: center;
+}
+.startButton:hover{
+	opacity:0.5;
+	transition:0.3s;
+}
+.studyButton{
+	position: absolute;
+	top: 68%;
+	left: 39%;
+	background-color: white;
+	height: 12%;
+	width: 21%;
+	font-size: 48px;
+	text-align: center;
+}
+.studyButton:hover{
+	opacity:0.5;
+	transition:0.3s;
+}
+body { 
+	background: linear-gradient(-225deg, #2CD8D5 0%, #C5C1FF 56%, #FFBAC3 100%); 
+}
+p{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin:  auto;
+}

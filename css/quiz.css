@@ -1,0 +1,56 @@
+.textbox1{
+	position: absolute;
+	top: 15%;
+	left: 11%;
+	background-color: red;
+	height: 15%;
+	width: 77%;
+}
+#textbox2{
+	position: absolute;
+	top: 4%;
+	left: 6%;
+	background-color: skyblue;
+	height: 8%;
+	width: 15%;
+}
+.timerGauge{
+	position: absolute;
+	top: 38%;
+	left: 10%;
+	background-color: brown;
+	height: 8%;
+	width: 80%;
+}
+.button1{
+	position: absolute;
+	top: 60%;
+	left: 9%;
+	background-color: purple;
+	height: 12%;
+	width: 30%;
+}
+.button2{
+	position: absolute;
+	top: 60%;
+	left: 60%;
+	background-color: green;
+	height: 12%;
+	width: 30%;
+}
+.button3{
+	position: absolute;
+	top: 80%;
+	left: 9%;
+	background-color: yellow;
+	height: 12%;
+	width: 30%;
+}
+.button4{
+	position: absolute;
+	top: 80%;
+	left: 60%;
+	background-color: darkblue;
+	height: 12%;
+	width: 30%;
+}
