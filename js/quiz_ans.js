@@ -59,24 +59,24 @@ let clickedCount = 0;
 while (clickedCount < buttonLength) {
     $button[clickedCount].addEventListener("click", function () {
         const clickedAnswer = event.currentTarget
-        // const answerCorrect = document.querySelector('.answer_correct');
-        // const answerIncorrect = document.querySelector('.answer_incorrect');
+        const answerCorrect = document.querySelector('.answer_correct')
+        const answerIncorrect = document.querySelector('.answer_incorrect')
         // const answerResult = document.querySelector('.answer_result');
         // const answerResultText = document.querySelector('.answer_result_text')
 
         if (quiz[quizCount].correct === clickedAnswer.textContent) {
-            // answerCorrect.classList.add("active_answer")
-            // setTimeout(function () {
-            //     answerCorrect.classList.remove("active_answer")
-            // }, 1000);
+            answerCorrect.classList.add("active_answer")
+            setTimeout(function () {
+                answerCorrect.classList.remove("active_answer")
+            }, 1000);
             console.log("OK!")
             score++;
         }
         else {
-            // answerIncorrect.classList.add("active_answer")
-            // setTimeout(function () {
-            //     answerIncorrect.classList.remove("active_answer")
-            // }, 1000);
+            answerIncorrect.classList.add("active_answer")
+            setTimeout(function () {
+                answerIncorrect.classList.remove("active_answer")
+            }, 1000);
             console.log("NOT OK!")
         }
 
