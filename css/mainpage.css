@@ -5,10 +5,10 @@
 	background-color: white;
 	height: 21%;
 	width: 42%;
-	font-size: 48px;
+	font-size: 36px;
 	text-align: center;
 	margin: 0 auto;
-	border: 2px solid #000;
+	
 }
 
 .startButton {
@@ -18,8 +18,9 @@
 	background-color: white;
 	height: 12%;
 	width: 21%;
-	font-size: 48px;
+	font-size: 24px;
 	text-align: center;
+	cursor: pointer;
 }
 
 .startButton:hover {
@@ -34,8 +35,9 @@
 	background-color: white;
 	height: 12%;
 	width: 21%;
-	font-size: 48px;
+	font-size: 24px;
 	text-align: center;
+	cursor: pointer;
 }
 
 .studyButton:hover {
