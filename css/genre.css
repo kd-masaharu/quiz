@@ -2,87 +2,104 @@
 	position: absolute;
 	top: 3%;
 	left: 5%;
-	background-color: red;
-	height: 5%;
+	background-color: white;
+	height: 15%;
 	width: 90%;
+	
 }
-.textbox2{
-	position: absolute;
-	top: 10%;
-	left: 40%;
-	background-color: skyblue;
-	height: 5%;
-	width: 20%;
+.genre button{
+	cursor: pointer;
 }
-.textbox3{
-	position: absolute;
-	top: 18%;
-	left: 40%;
-	background-color: skyblue;
-	height: 5%;
-	width: 20%;
-}
-.button1{
+.button1{/*行政*/
 	position: absolute;
 	top: 27.5%;
 	left: 10%;
-	background-color: green;
+	background-color: yellow;
 	height: 12.5%;
 	width: 35%;
 }
-.button2{
+.button2{/*法律*/
 	position: absolute;
 	top: 45%;
 	left: 10%;
-	background-color: green;
+	background-color: yellow;
 	height: 12.5%;
 	width: 35%;
 }
-.button3{
+.button3{/*選挙*/
 	position: absolute;
 	top: 62.5%;
 	left: 10%;
-	background-color: green;
+	background-color: yellow;
 	height: 12.5%;
 	width: 35%;
 }
-.button4{
+.button4{/*戻る*/
 	position: absolute;
 	top: 84%;
 	left: 17.5%;
-	background-color: yellowgreen;
+	background-color: white;
 	height: 8%;
 	width: 20%;
 }
-.button5{
+.button4:hover{
+	opacity: 0.5;
+	transition: 0.3s;
+}
+.button5{/*海外*/
 	position: absolute;
 	top: 27.5%;
 	left: 55%;
-	background-color: green;
+	background-color: yellow;
 	height: 12.5%;
 	width: 35%;
 }
-.button6{
+.button6{/*常識*/
 	position: absolute;
 	top: 45%;
 	left: 55%;
-	background-color: green;
+	background-color: yellow;
 	height: 12.5%;
 	width: 35%;
 }
-.button7{
+.button7{/*etc*/
 	position: absolute;
 	top: 62.5%;
 	left: 55%;
-	background-color: green;
+	background-color: yellow;
 	height: 12.5%;
 	width: 35%;
 }
-.button8{
+.button8{/*開始*/
 	position: absolute;
 	top: 84%;
 	left: 62.5%;
-	background-color: yellowgreen;
+	background-color: white;
 	height: 8%;
 	width: 20%;
+}
+.button8:hover{
+	opacity: 0.5;
+	transition: 0.3s;
+}
+p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: auto;
+	font-size: 48px;
+}
+.genre input:checked+label{
+    background: green;
+    color: black;
+}
+.genre input{
+    display: none;
+}
+.genre label{
+	cursor: pointer;
+}
+button{
+	cursor: pointer;
 }
