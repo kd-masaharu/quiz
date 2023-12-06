@@ -67,6 +67,10 @@
 }
 
 .question_number {
+	font-size: 48px;
+}
+
+.textbox2 {
 	position: absolute;
 	top: 4%;
 	left: 6%;
