@@ -56,6 +56,9 @@ setupQuiz();
 
 
 let clickedCount = 0;
+let pre = Date.now()-1000;
+let is_s_click = true;
+
 while (clickedCount < buttonLength) {
     $button[clickedCount].addEventListener("click", function () {
         const clickedAnswer = event.currentTarget
@@ -64,33 +67,46 @@ while (clickedCount < buttonLength) {
         // const answerResult = document.querySelector('.answer_result');
         // const answerResultText = document.querySelector('.answer_result_text')
 
-        if (quiz[quizCount].correct === clickedAnswer.textContent) {
-            answerCorrect.classList.add("active_answer")
-            setTimeout(function () {
-                answerCorrect.classList.remove("active_answer")
-            }, 1000);
-            console.log("OK!")
-            score++;
+        if (Date.now() > pre+1000){
+            console.log("single")
+            is_s_click = true;
+            pre = Date.now();
+        }else{
+            console.log("double")
+            is_s_click = false;
         }
-        else {
-            answerIncorrect.classList.add("active_answer")
-            setTimeout(function () {
-                answerIncorrect.classList.remove("active_answer")
-            }, 1000);
-            console.log("NOT OK!")
-        }
+        
+        if (is_s_click){
+            if (quiz[quizCount].correct === clickedAnswer.textContent) {
+                answerCorrect.classList.add("active_answer")
+                setTimeout(function () {
+                    answerCorrect.classList.remove("active_answer")
+                }, 1000);
+                console.log("OK!")
+                score++;
+            }
+            else {
+                answerIncorrect.classList.add("active_answer")
+                setTimeout(function () {
+                    answerIncorrect.classList.remove("active_answer")
+                }, 1000);
+                console.log("NOT OK!")
+            }
 
-        quizCount++;
-        if (quizCount < quizLength) {
-            setTimeout(function () {
-                setupQuiz();
-            }, 1000);
-        }
-        else {
-            // answerResult.classList.add("active_result")
-            // answerResultText.textContent = '終了！あなたの正解数は' + score + '/' + quizLength + 'です！'
-            console.log("終わりだよー^^")
+            quizCount++;
+            if (quizCount < quizLength) {
+                setTimeout(function () {
+                    setupQuiz();
+                }, 1000);
+            }
+            else {
+                // answerResult.classList.add("active_result")
+                // answerResultText.textContent = '終了！あなたの正解数は' + score + '/' + quizLength + 'です！'
+                console.log("終わりだよー^^")
+            }
         }
     });
-    clickedCount++;
+    if (is_s_click){
+        clickedCount++;
+    }
 }
