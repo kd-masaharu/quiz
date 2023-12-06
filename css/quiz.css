@@ -11,6 +11,7 @@
 	visibility: hidden;
 	opacity: 0;
 	transition: all 0.5s;
+	z-index: 2;
 }
 
 .answer_correct .maru {
@@ -33,6 +34,7 @@
 	visibility: hidden;
 	opacity: 0;
 	transition: all 0.5s;
+	z-index: 2;
 }
 
 .answer_incorrect .batu {
@@ -60,17 +62,13 @@
 	top: 15%;
 	left: 11%;
 	background-color: white;
-	height: 15%;
+	height: 32%;
 	width: 77%;
 	border: 2px solid #000;
-	font-size: 36px;
+	font-size: 30px;
 }
 
 .question_number {
-	font-size: 48px;
-}
-
-.textbox2 {
 	position: absolute;
 	top: 4%;
 	left: 6%;
@@ -78,16 +76,7 @@
 	height: 8%;
 	width: 15%;
 	border: 2px solid #000;
-}
-
-.timerGauge {
-	position: absolute;
-	top: 38%;
-	left: 10%;
-	background-color: brown;
-	height: 8%;
-	width: 80%;
-	font-size: 24px;
+	font-size: 32px;
 }
 
 .button1 {
