@@ -13,21 +13,29 @@
 	<div class="textbox1"><p>クイズジャンルを選択してね</p></div>
 
 	<div class="genre">
-	<input type="checkbox" check id="1" name="genre"><label for="1"class="button1"><p>敬語</p></label>
 
-	<input type="checkbox" check id="2" name="genre"><label for="2"class="button2"><p>税金</p></label>
+	<form method="GET" action="quiz.html" >
+	
+	<input type="checkbox" check id="1" name="genre" value="1"><label for="1"class="button1"><p>税金</p></label>
 
-	<input type="checkbox" check id="3" name="genre"><label for="3"class="button3"><p>保険</p></label>
+	<input type="checkbox" check id="2" name="genre" value="2"><label for="2"class="button2"><p>連絡</p></label>
 
-	<input type="checkbox" check id="4" name="genre"><label for="4"class="button7"><p>連絡</p></label>
+	<input type="checkbox" check id="3" name="genre" value="3"><label for="3"class="button3"><p>文章</p></label>
 
-	<input type="checkbox" check id="5" name="genre"><label for="5"class="button5"><p>文書</p></label>
+	<input type="checkbox" check id="4" name="genre" value="4"><label for="4"class="button7"><p>敬語</p></label>
 
-	<input type="checkbox" check id="6" name="genre"><label for="6"class="button6"><p>etc</p>
-    </label></div>
+	<input type="checkbox" check id="5" name="genre" value="5"><label for="5"class="button5"><p>保険</p></label>
 
+	<input type="checkbox" check id="6" name="genre" value="6"><label for="6"class="button6"><p>etc</p></label>
+
+	</div>
+
+	
 	<a href="index.html"><button class="button4"><p>戻る</p></button></a>
-	<a href="quiz.html"><button class="button8"><p>開始</p></button></a>
+	<input class="button8" type="submit" name="submit" value="開始">
+
+
+	</form>
 
 </body>
 
