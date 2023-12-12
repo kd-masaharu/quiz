@@ -659,24 +659,42 @@ let score = 0;
 
 const $button = document.querySelectorAll('.quiz-button')
 const buttonLength = $button.length
+const explanation_div = document.querySelector(".explanation");
 
 const setupQuiz = () => {
     document.getElementById('js-question').textContent = quiz[quizCount].question
     document.getElementById('js-number').textContent = "第"+(quizCount+1)+"問"
 
+	explanation_div.style.display = "none";
+
     let buttonCount = 0;
 
     while (buttonCount < buttonLength) {
         $button[buttonCount].textContent = quiz[quizCount].answers[buttonCount]
+		$button[buttonCount].style.display = "block";
         buttonCount++;
     }
 }
 setupQuiz();
 
+const setupExplanation = () => {
+	document.getElementById('js-explanation').textContent = quiz[quizCount].explanation
+
+	explanation_div.style.display = "block";
+
+	let buttonCount = 0;
+
+    while (buttonCount < buttonLength) {
+        $button[buttonCount].style.display = "none";
+        buttonCount++;
+    }
+}
 
 let clickedCount = 0;
 let pre = Date.now()-1000;
 let is_s_click = true;
+const scores = [0,0,0,0,0,0]
+const quizzes = [0,0,0,0,0,0]
 
 while (clickedCount < buttonLength) {
     $button[clickedCount].addEventListener("click", function () {
@@ -696,6 +714,7 @@ while (clickedCount < buttonLength) {
         }
         
         if (is_s_click){
+			quizzes[quiz[quizCount].genreId-1]++;
             if (quiz[quizCount].correct === clickedAnswer.textContent[0]) {
                 answerCorrect.classList.add("active_answer")
                 setTimeout(function () {
@@ -703,6 +722,7 @@ while (clickedCount < buttonLength) {
                 }, 1000);
                 console.log("OK!")
                 score++;
+				scores[quiz[quizCount].genreId-1]++;
             }
             else {
                 answerIncorrect.classList.add("active_answer")
@@ -711,25 +731,34 @@ while (clickedCount < buttonLength) {
                 }, 1000);
                 console.log("NOT OK!")
             }
-
-            quizCount++;
-            if (quizCount < quizLength) {
-                setTimeout(function () {
-                    setupQuiz();
-                }, 1000);
-            }
-            else {
-                // answerResult.classList.add("active_result")
-                // answerResultText.textContent = '終了！あなたの正解数は' + score + '/' + quizLength + 'です！'
-                console.log("終わりだよー^^")
-				setTimeout(function () {
-					// リザルト画面に遷移
-					window.location.href = 'lastpage.html?score=' + score;
-                }, 1000);
-            }
+			setupExplanation();
         }
     });
     if (is_s_click){
         clickedCount++;
     }
+}
+
+function expClick(){
+	quizCount++;
+	if (quizCount < quizLength) {
+		setupQuiz();
+	}
+	else {
+		// answerResult.classList.add("active_result")
+		// answerResultText.textContent = '終了！あなたの正解数は' + score + '/' + quizLength + 'です！'
+		console.log("終わりだよー^^")
+		
+		// リザルト画面に遷移
+		url = 'lastpage.html?'
+		for(let i = 0 ; i < scores.length;i++){
+			url += 'genre-sum' + (i+1) + '=' + quizzes[i] + '&'
+			if(i==scores.length-1){
+				url += 'genre-score' + (i+1) + '=' + scores[i]
+			}else{
+				url += 'genre-score' + (i+1) + '=' + scores[i] + '&'
+			}
+		}
+		window.location.href = url;
+	}
 }
