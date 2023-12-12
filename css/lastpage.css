@@ -1,0 +1,152 @@
+.whitebackground{
+    position: absolute;
+	top: 11%;
+	left: 16%;
+	background-color: white;
+	height: 78%;
+	width: 67%;
+    z-index: 1;
+}
+.genrelabel1{
+    position: absolute;
+	top: 15%;
+	left: 22%;
+	background-color: white;
+	height: 5%;
+	width: 16%;
+    z-index: 2;
+    font-size: 30px;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: fadeInFromBottom 1s forwards;
+}
+.genrelabel2{
+    position: absolute;
+	top: 27%;
+	left: 22%;
+	background-color: white;
+	height: 5%;
+	width: 16%;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: fadeInFromBottom 1s forwards;
+}
+.genrelabel3{
+    position: absolute;
+	top: 39%;
+	left: 22%;
+	background-color: white;
+	height: 5%;
+	width: 16%;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: fadeInFromBottom 1s forwards;
+}
+.genrelabel4{
+    position: absolute;
+	top: 50%;
+	left: 22%;
+	background-color: white;
+	height: 5%;
+	width: 16%;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: fadeInFromBottom 1s forwards;
+}
+.genrelabel5{
+    position: absolute;
+	top: 62%;
+	left: 22%;
+	background-color: white;
+	height: 5%;
+	width: 16%;
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: fadeInFromBottom 1s forwards;
+}
+.finishButton{
+    position: absolute;
+	top: 80%;
+	left: 22%;
+	background-color: wheat;
+	height: 5%;
+	width: 11%;
+    z-index: 2;
+    cursor: pointer;
+}
+.finishButton:hover{
+    opacity: 0.5;
+	transition: 0.3s;
+}
+.againButton{
+    position: absolute;
+	top: 80%;
+	left: 44%;
+	background-color: wheat;
+	height: 5%;
+	width: 11%;
+    z-index: 2;
+    cursor: pointer;
+}
+.againButton:hover{
+    opacity: 0.5;
+	transition: 0.3s;
+}
+.snsButton{
+    position: absolute;
+	top: 80%;
+	right: 22%;
+	background-color: wheat;
+	height: 5%;
+	width: 11%;
+    z-index: 2;
+    cursor: pointer;
+}
+.snsButton:hover{
+    opacity: 0.5;
+	transition: 0.3s;
+}
+.totaltext1{
+    position: absolute;
+	top: 17%;
+	left: 50%;
+	background-color: white;
+	height: 10%;
+	width: 27%;
+    z-index: 2;
+    font-size: 50px;
+}
+.totaltext2{
+    position: absolute;
+	top: 36%;
+	left: 50%;
+    opacity: 0;
+    transform: translateY(100%);
+    animation-delay: 3s;
+    animation: fadeInFromBottom 1s forwards;
+	background-color: white;
+	height: 10%;
+	width: 27%;
+    z-index: 2;
+    font-size: 50px;
+    text-align: center;
+}
+@keyframes fadeInFromBottom {
+    to {
+      opacity: 1; /* アニメーション終了時に完全に表示 */
+      transform: translateY(0); /* アニメーション終了時の位置 */
+    }
+  }
+#total{
+    animation-delay: 1s;
+}
+div{
+    margin: 0 auto;
+}
+p{
+    font-size: 30px;
+}
