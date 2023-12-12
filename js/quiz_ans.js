@@ -1,6 +1,5 @@
 // todo
 // ・チェックボックスを一つも選択しなかった場合に次へボタンを押せないよう修正する
-// ・バグを修正
 const data = [
 	{
 		"questionId":"1",
@@ -629,12 +628,15 @@ console.log(genre);
 // クイズの候補を格納
 const quiz_candidate = [];
 for(let i = 0 ; i < data.length ; i++){
-    if(data[i]["genreId"] in genre){
+    if(genre.includes(data[i]["genreId"])){
+		console.log(data[i]["genreId"])
         quiz_candidate.push(data[i]);
     } 
 }
 
-console.log(quiz_candidate);
+console.log(data.length);
+
+console.log(quiz_candidate.length);
 
 // クイズの問題をランダムに決定
 const quiz = [];
