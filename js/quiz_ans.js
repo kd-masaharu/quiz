@@ -722,8 +722,10 @@ while (clickedCount < buttonLength) {
                 // answerResult.classList.add("active_result")
                 // answerResultText.textContent = '終了！あなたの正解数は' + score + '/' + quizLength + 'です！'
                 console.log("終わりだよー^^")
-				// リザルト画面に遷移
-				window.location.href = 'lastpage.html?score=' + score;
+				setTimeout(function () {
+					// リザルト画面に遷移
+					window.location.href = 'lastpage.html?score=' + score;
+                }, 1000);
             }
         }
     });
