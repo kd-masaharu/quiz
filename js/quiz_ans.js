@@ -678,7 +678,7 @@ const setupQuiz = () => {
 setupQuiz();
 
 const setupExplanation = () => {
-	document.getElementById('js-explanation').textContent = quiz[quizCount].explanation
+	document.getElementById('js-explanation').innerHTML = "<b>正解:"+quiz[quizCount].answers[quiz[quizCount].correct-1]+"</b><br>"+quiz[quizCount].explanation
 
 	explanation_div.style.display = "block";
 
