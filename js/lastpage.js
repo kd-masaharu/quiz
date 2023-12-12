@@ -17,8 +17,18 @@ if (queryString) {
 }
 
 console.log(answers)
-const $label = document.querySelectorAll('.quiz-button')
+let $label = document.querySelectorAll('.label-content p')
+let question_cnt = 0;
+let currect_cnt = 0;
 
-for(let i=0 ; i<6 ; i++){
-    
+for(let i=0 ; i<5 ; i++){
+    $label[i].textContent += "：" + answers["genre-score"+(i+1)]+"/"+answers["genre-sum"+(i+1)]
+    console.log(Number(answers["genre-sum"+(i+1)])+question_cnt)
+    question_cnt += Number(answers["genre-sum"+(i+1)])
+    currect_cnt += Number(answers["genre-score"+(i+1)])
 }
+
+console.log(question_cnt)
+console.log(currect_cnt)
+
+document.querySelector(".totaltext2").textContent = (currect_cnt / question_cnt * 100) + "%"
