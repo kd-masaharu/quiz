@@ -10,11 +10,12 @@
 </head>
 
 <body>
+
 	<div class="textbox1"><p>クイズジャンルを選択してね</p></div>
 
 	<div class="genre">
 
-	<form method="GET" action="quiz.html" >
+	<form name="form1" method="GET" action="quiz.html" onsubmit="return cancelsubmit()">
 	
 	<input type="checkbox" check id="1" name="genre" value="1"><label for="1"class="button1"><p>税金</p></label>
 
@@ -36,6 +37,8 @@
 
 
 	</form>
+	
+	<script src="./js/genre.js"></script>
 
 </body>
 

@@ -1,5 +1,5 @@
 // todo
-// ・チェックボックスを一つも選択しなかった場合に次へボタンを押せないよう修正する
+// ・ジャンルごとの正答数をgetで送る
 const data = [
 	{
 		"questionId":"1",
@@ -662,7 +662,7 @@ const buttonLength = $button.length
 
 const setupQuiz = () => {
     document.getElementById('js-question').textContent = quiz[quizCount].question
-    document.getElementById('js-number').textContent = quiz[quizCount].questionNumber
+    document.getElementById('js-number').textContent = "第"+(quizCount+1)+"問"
 
     let buttonCount = 0;
 
@@ -722,6 +722,8 @@ while (clickedCount < buttonLength) {
                 // answerResult.classList.add("active_result")
                 // answerResultText.textContent = '終了！あなたの正解数は' + score + '/' + quizLength + 'です！'
                 console.log("終わりだよー^^")
+				// リザルト画面に遷移
+				window.location.href = 'lastpage.html?score=' + score;
             }
         }
     });
