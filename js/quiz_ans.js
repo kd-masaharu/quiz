@@ -591,8 +591,9 @@ const choise_index = [];
 let i = 0
 while(i < 10){
     idx = Math.floor(Math.random() * quiz_candidate.length)
-    if ( ! (idx in choise_index)){
+    if ( ! (choise_index.includes(idx))){
         i++;
+		console.log(idx)
         choise_index.push(idx)
         quiz.push(quiz_candidate[idx])
     } 
