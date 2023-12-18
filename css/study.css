@@ -1,0 +1,39 @@
+.group {
+	background-color: white;
+	width: 80%;
+	font-size: 36px;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 30px;
+    margin-bottom: 50px;
+    border: 2px solid #000;
+    overflow: hidden;
+}
+
+.genre-title{
+    border-bottom: 2px solid #000;
+    background-color: cyan;
+}
+
+.title{
+    border: 2px solid #000;
+    background-color: cyan;
+}
+
+.genre{
+    border-bottom: 2px solid #000;
+}
+
+.question {
+	border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.correct {
+	border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+.explanation {
+	border-top: 2px solid #000;
+}
