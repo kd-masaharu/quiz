@@ -594,54 +594,110 @@ data.sort((a, b) =>
   a.genreId > b.genreId ? 1 : -1
 );
 
-// dataをhtmlに格納
+// GETメソッドからジャンルIDを抽出
+let queryString = window.location.search;
+let queryObject = new Object();
+let cheks = []
+if (queryString) {
+  queryString = queryString.substring(1);
+  let parameters = queryString.split("&");
+
+  for (let i = 0; i < parameters.length; i++) {
+    let element = parameters[i].split("=");
+
+    let paramName = decodeURIComponent(element[0]);
+    let paramValue = decodeURIComponent(element[1]);
+
+    if(paramValue == "1"){
+		cheks.push(paramName.slice(paramName.length-1))
+	}else{
+		document.form1.genre[i].checked = false
+	}
+  }
+}
 
 const genre = ['','税金','連絡','文章','敬語','保険']
+let is_first = false
+
+// dataをhtmlに格納
+
+if(cheks.length == 0){
+	is_first = true
+}
+
 
 for(let i = 0 ; i < data.length ; i++){
-    
-    let group_elm = document.createElement('div');
-    group_elm.className = 'group';
+	if(is_first || cheks.includes(data[i].genreId)){
+		let group_elm = document.createElement('div');
+		group_elm.className = 'group';
+	
+		let genre_t_elm = document.createElement('div');
+		genre_t_elm.className = 'genre-title';
+		genre_t_elm.textContent = 'ジャンル'
+	
+		let genre_elm = document.createElement('div');
+		genre_elm.className = 'genres';
+		genre_elm.textContent = genre[data[i].genreId]
+	
+		let question_t_elm = document.createElement('div');
+		question_t_elm.className = 'title';
+		question_t_elm.textContent = '問題'
+	
+		let question_elm = document.createElement('div');
+		question_elm.className = 'question';
+		question_elm.textContent = data[i].question
+	
+		let correct_t_elm = document.createElement('div');
+		correct_t_elm.className = 'title';
+		correct_t_elm.textContent = '答え'
+	
+		let correct_elm = document.createElement('div');
+		correct_elm.className = 'correct';
+		correct_elm.textContent = data[i].answers[data[i].correct-1].slice(2)
+	
+		let explanation_t_elm = document.createElement('div');
+		explanation_t_elm.className = 'title';
+		explanation_t_elm.textContent = '解説'
+	
+		let explanation_elm = document.createElement('div');
+		explanation_elm.className = 'explanation';
+		if(data[i].url.length != 0){
+			explanation_elm.innerHTML = data[i].explanation + "<a href='"+data[i].url+"'target='_blank' rel='noopener noreferrer'>詳しく見る</a>"
+		}else{
+			explanation_elm.innerHTML = data[i].explanation
+		}
+	
+		group_elm.appendChild(genre_t_elm);
+		group_elm.appendChild(genre_elm);
+		group_elm.appendChild(question_t_elm);
+		group_elm.appendChild(question_elm);
+		group_elm.appendChild(correct_t_elm);
+		group_elm.appendChild(correct_elm);
+		group_elm.appendChild(explanation_t_elm);
+		group_elm.appendChild(explanation_elm);
+		document.getElementById('body').appendChild(group_elm);
+	}
+}
 
-    let genre_t_elm = document.createElement('div');
-    genre_t_elm.className = 'genre-title';
-    genre_t_elm.textContent = 'ジャンル'
-
-    let genre_elm = document.createElement('div');
-    genre_elm.className = 'genre';
-    genre_elm.textContent = genre[data[i].genreId]
-
-    let question_t_elm = document.createElement('div');
-    question_t_elm.className = 'title';
-    question_t_elm.textContent = '問題'
-
-    let question_elm = document.createElement('div');
-    question_elm.className = 'question';
-    question_elm.textContent = data[i].question
-
-    let correct_t_elm = document.createElement('div');
-    correct_t_elm.className = 'title';
-    correct_t_elm.textContent = '答え'
-
-    let correct_elm = document.createElement('div');
-    correct_elm.className = 'correct';
-    correct_elm.textContent = data[i].answers[data[i].correct-1].slice(2)
-
-    let explanation_t_elm = document.createElement('div');
-    explanation_t_elm.className = 'title';
-    explanation_t_elm.textContent = '解説'
-
-    let explanation_elm = document.createElement('div');
-    explanation_elm.className = 'explanation';
-    explanation_elm.textContent = data[i].explanation
-
-    group_elm.appendChild(genre_t_elm);
-    group_elm.appendChild(genre_elm);
-    group_elm.appendChild(question_t_elm);
-    group_elm.appendChild(question_elm);
-    group_elm.appendChild(correct_t_elm);
-    group_elm.appendChild(correct_elm);
-    group_elm.appendChild(explanation_t_elm);
-    group_elm.appendChild(explanation_elm);
-    document.getElementById('body').appendChild(group_elm);
+function reroad(idx){
+	is_checked = false
+    for(let i = 0 ; i < document.form1.genre.length ; i++){
+        if (document.form1.genre[i].checked) {
+            is_checked = true;   
+        }
+    }
+    if(!is_checked){
+        alert("最低一つチェックを入れてください");
+        document.form1.genre[idx-1].checked = true
+    }else{
+		url = "study.html?"
+		for(let i = 0 ; i < document.form1.genre.length ; i++){
+			if (document.form1.genre[i].checked) {
+				url += 'genre-id' + (i+1) + '=1&'
+			}else{
+				url += 'genre-id' + (i+1) + '=0&'
+			}
+		}
+		window.location.href = url.slice(0,url.length-1);
+	}
 }
