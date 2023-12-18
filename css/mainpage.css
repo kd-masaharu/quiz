@@ -8,6 +8,7 @@
 	font-size: 36px;
 	text-align: center;
 	margin: 0 auto;
+	border-radius: 30px;
 	
 }
 
@@ -20,12 +21,27 @@
 	width: 21%;
 	font-size: 24px;
 	text-align: center;
+	overflow: hidden;
 	cursor: pointer;
+	border-radius: 30px;
 }
 
+.startButton::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(39, 172, 217);
+	transform: translateX(-100%);
+	transition: all .3s;
+}
+.startButton:hover::before{
+	transform: translate(0);
+}
 .startButton:hover {
-	opacity: 0.5;
-	transition: 0.3s;
+	color: #fff;
 }
 
 .studyButton {
@@ -37,12 +53,28 @@
 	width: 21%;
 	font-size: 24px;
 	text-align: center;
+	overflow: hidden;
 	cursor: pointer;
+	border-radius: 30px;
 }
 
+.studyButton::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(39, 172, 217);
+	transform: translateX(-100%);
+	transition: all .3s;
+}
+
+.studyButton:hover::before{
+	transform: translate(0);
+}
 .studyButton:hover {
-	opacity: 0.5;
-	transition: 0.3s;
+	color: #fff;
 }
 
 p {
