@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'myfont';
+    src: url('../makinas4/Makinas-4-Flat.otf') format('opentype'),
+  }
 .whitebackground{
     position: absolute;
 	top: 11%;
@@ -5,7 +9,7 @@
 	background-color: white;
 	height: 78%;
 	width: 67%;
-    z-index: 1;
+    
 }
 .genrelabel1{
     position: absolute;
@@ -14,7 +18,6 @@
 	background-color: white;
 	height: 5%;
 	width: 16%;
-    z-index: 2;
     font-size: 30px;
     opacity: 0;
     transform: translateY(100%);
@@ -27,7 +30,6 @@
 	background-color: white;
 	height: 5%;
 	width: 16%;
-    z-index: 2;
     opacity: 0;
     transform: translateY(100%);
     animation: fadeInFromBottom 1s forwards;
@@ -39,7 +41,6 @@
 	background-color: white;
 	height: 5%;
 	width: 16%;
-    z-index: 2;
     opacity: 0;
     transform: translateY(100%);
     animation: fadeInFromBottom 1s forwards;
@@ -51,7 +52,6 @@
 	background-color: white;
 	height: 5%;
 	width: 16%;
-    z-index: 2;
     opacity: 0;
     transform: translateY(100%);
     animation: fadeInFromBottom 1s forwards;
@@ -63,7 +63,6 @@
 	background-color: white;
 	height: 5%;
 	width: 16%;
-    z-index: 2;
     opacity: 0;
     transform: translateY(100%);
     animation: fadeInFromBottom 1s forwards;
@@ -75,7 +74,6 @@
 	background-color: white;
 	height: 5%;
 	width: 16%;
-    z-index: 2;
     opacity: 0;
     transform: translateY(100%);
     animation: fadeInFromBottom 1s forwards;
@@ -87,12 +85,27 @@
 	background-color: wheat;
 	height: 5%;
 	width: 11%;
-    z-index: 2;
     cursor: pointer;
+    font-family:"myfont",sans-serif;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.finishButton::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(39, 172, 217);
+	transform: translateX(-100%);
+	transition: all .3s;
+}
+.finishButton:hover::before{
+	transform: translate(0);
 }
 .finishButton:hover{
-    opacity: 0.5;
-	transition: 0.3s;
+    color: #fff;
 }
 .againButton{
     position: absolute;
@@ -101,12 +114,27 @@
 	background-color: wheat;
 	height: 5%;
 	width: 11%;
-    z-index: 2;
     cursor: pointer;
+    font-family:"myfont",sans-serif;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.againButton::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(39, 172, 217);
+	transform: translateX(-100%);
+	transition: all .3s;
+}
+.againButton:hover::before{
+	transform: translate(0);
 }
 .againButton:hover{
-    opacity: 0.5;
-	transition: 0.3s;
+    color: #fff;
 }
 .snsButton{
     position: absolute;
@@ -115,12 +143,27 @@
 	background-color: wheat;
 	height: 5%;
 	width: 11%;
-    z-index: 2;
     cursor: pointer;
+    font-family:"myfont",sans-serif;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.snsButton::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(39, 172, 217);
+	transform: translateX(-100%);
+	transition: all .3s;
+}
+.snsButton:hover::before{
+	transform: translate(0);
 }
 .snsButton:hover{
-    opacity: 0.5;
-	transition: 0.3s;
+    color: #fff;
 }
 .totaltext1{
     position: absolute;
@@ -129,7 +172,6 @@
 	background-color: white;
 	height: 10%;
 	width: 27%;
-    z-index: 2;
     font-size: 50px;
 }
 .totaltext2{
@@ -143,7 +185,6 @@
 	background-color: white;
 	height: 10%;
 	width: 27%;
-    z-index: 2;
     font-size: 50px;
     text-align: center;
 }
