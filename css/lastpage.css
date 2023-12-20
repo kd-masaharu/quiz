@@ -89,6 +89,7 @@
     font-family:"myfont",sans-serif;
     border-radius: 30px;
     overflow: hidden;
+	z-index: 1;
 }
 .finishButton::before{
 	content: "";
@@ -100,6 +101,7 @@
 	background-color: rgb(39, 172, 217);
 	transform: translateX(-100%);
 	transition: all .3s;
+	z-index: -1;
 }
 .finishButton:hover::before{
 	transform: translate(0);
@@ -118,6 +120,7 @@
     font-family:"myfont",sans-serif;
     border-radius: 30px;
     overflow: hidden;
+	z-index: 1;
 }
 .againButton::before{
 	content: "";
@@ -129,6 +132,7 @@
 	background-color: rgb(39, 172, 217);
 	transform: translateX(-100%);
 	transition: all .3s;
+	z-index: -1;
 }
 .againButton:hover::before{
 	transform: translate(0);
@@ -147,6 +151,7 @@
     font-family:"myfont",sans-serif;
     border-radius: 30px;
     overflow: hidden;
+	z-index: 1;
 }
 .snsButton::before{
 	content: "";
@@ -158,6 +163,7 @@
 	background-color: rgb(39, 172, 217);
 	transform: translateX(-100%);
 	transition: all .3s;
+	z-index: -1;
 }
 .snsButton:hover::before{
 	transform: translate(0);
