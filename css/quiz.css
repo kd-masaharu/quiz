@@ -15,10 +15,11 @@
 }
 
 .answer_correct .maru {
-	width: 100px;
-	height: 100px;
+	width: 10%;
+	padding-top: 10%;
 	border-radius: 50%;
 	border: solid 10px red;
+	transform: translate(-10%, 0);
 }
 
 .answer_incorrect {
@@ -39,19 +40,19 @@
 
 .answer_incorrect .batu {
 	position: relative;
-	width: 120px;
+	width: 10em;
 	height: 10px;
 	background-color: blue;
-	transform: rotate(45deg);
+	transform: translate(-10%, -10%) rotate(45deg);
 }
 
 .answer_incorrect .batu::before {
 	position: absolute;
-	width: 120px;
+	width: 10em;
 	height: 10px;
 	background-color: blue;
 	content: "";
-	transform: rotate(-90deg);
+	transform: translate(0, -10%)rotate(-90deg);
 }
 
 .active_answer {
