@@ -39,7 +39,7 @@
 
 .answer_incorrect .batu {
 	position: relative;
-	width: 100px;
+	width: 120px;
 	height: 10px;
 	background-color: blue;
 	transform: rotate(45deg);
@@ -47,7 +47,7 @@
 
 .answer_incorrect .batu::before {
 	position: absolute;
-	width: 100px;
+	width: 120px;
 	height: 10px;
 	background-color: blue;
 	content: "";
