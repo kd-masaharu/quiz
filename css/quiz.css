@@ -67,7 +67,7 @@
 	height: 32%;
 	width: 77%;
 	border: 2px solid #000;
-	font-size: 2em;
+	font-size: 3em;
 }
 
 .question_number {
@@ -152,6 +152,7 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	margin: 0 auto;
+	width: 80%;
 }
 
 .explanation {
