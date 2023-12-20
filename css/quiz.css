@@ -39,17 +39,19 @@
 
 .answer_incorrect .batu {
 	position: relative;
-	width: 100px;
+	width: 120px;
 	height: 10px;
 	background-color: blue;
+	transform: rotate(45deg);
 }
 
 .answer_incorrect .batu::before {
 	position: absolute;
-	width: 100px;
+	width: 120px;
 	height: 10px;
 	background-color: blue;
 	content: "";
+	transform: rotate(-90deg);
 }
 
 .active_answer {
@@ -89,7 +91,7 @@
 	border: 2px solid #000;
 }
 
-.button1:hover{
+.button1:hover {
 	opacity: 0.5;
 	transition: 0.3s;
 }
@@ -104,7 +106,7 @@
 	border: 2px solid #000;
 }
 
-.button2:hover{
+.button2:hover {
 	opacity: 0.5;
 	transition: 0.3s;
 }
@@ -119,7 +121,7 @@
 	border: 2px solid #000;
 }
 
-.button3:hover{
+.button3:hover {
 	opacity: 0.5;
 	transition: 0.3s;
 }
@@ -134,10 +136,11 @@
 	border: 2px solid #000;
 }
 
-.button4:hover{
+.button4:hover {
 	opacity: 0.5;
 	transition: 0.3s;
 }
+
 .btn {
 	font-size: 34px;
 }
@@ -150,7 +153,7 @@
 	margin: 0 auto;
 }
 
-.explanation{
+.explanation {
 	position: absolute;
 	top: 50%;
 	left: 11%;
@@ -161,6 +164,7 @@
 	font-size: 30px;
 	display: none;
 }
-.quiz-button{
+
+.quiz-button {
 	cursor: pointer;
 }
