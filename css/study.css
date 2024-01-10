@@ -6,36 +6,36 @@
     margin: 0 auto;
     border-radius: 30px;
     margin-bottom: 50px;
-    border: 2px solid #000;
+    border: 3px solid #000;
     overflow: hidden;
 }
 
 .genre-title {
-    border-bottom: 2px solid #000;
+    border: 2px solid #000;
     background-color: cyan;
+    color: green;
 }
 
 .title {
     border: 2px solid #000;
     background-color: cyan;
+    color: green;
 }
 
 .genres {
-    border-bottom: 2px solid #000;
+    border: 2px solid #000;
 }
 
 .question {
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
+    border: 2px solid #000;
 }
 
 .correct {
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
+    border: 2px solid #000;
 }
 
 .explanation {
-    border-top: 2px solid #000;
+    border: 2px solid #000;
 }
 
 form {
