@@ -43,7 +43,7 @@ form {
     width: 100%;
 }
 
-.genreButton {
+form label {
     margin: 1%;
     background-color: yellow;
     height: 12%;
@@ -53,11 +53,15 @@ form {
     cursor: pointer;
 }
 
-.genreButton input {
+form input:checked+label {
+    background-color: green;
+}
+
+form input {
     display: none;
 }
 
-.genreButton p {
+form p {
     text-align: center;
     font-size: 20px;
     padding: 0;
