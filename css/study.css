@@ -1,39 +1,64 @@
 .group {
-	background-color: white;
-	width: 80%;
-	font-size: 36px;
-	text-align: center;
-	margin: 0 auto;
-	border-radius: 30px;
+    background-color: white;
+    width: 80%;
+    font-size: 36px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 30px;
     margin-bottom: 50px;
     border: 2px solid #000;
     overflow: hidden;
 }
 
-.genre-title{
+.genre-title {
     border-bottom: 2px solid #000;
     background-color: cyan;
 }
 
-.title{
+.title {
     border: 2px solid #000;
     background-color: cyan;
 }
 
-.genres{
+.genres {
     border-bottom: 2px solid #000;
 }
 
 .question {
-	border-top: 2px solid #000;
+    border-top: 2px solid #000;
     border-bottom: 2px solid #000;
 }
 
 .correct {
-	border-top: 2px solid #000;
+    border-top: 2px solid #000;
     border-bottom: 2px solid #000;
 }
 
 .explanation {
-	border-top: 2px solid #000;
+    border-top: 2px solid #000;
+}
+
+form {
+    display: flex;
+    width: 100%;
+}
+
+.genreButton {
+    margin: 1%;
+    background-color: yellow;
+    height: 12%;
+    width: 18%;
+    border-radius: 15px;
+    border: solid 3px;
+    cursor: pointer;
+}
+
+.genreButton input {
+    display: none;
+}
+
+.genreButton p {
+    text-align: center;
+    font-size: 20px;
+    padding: 0;
 }
