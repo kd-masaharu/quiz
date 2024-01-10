@@ -182,7 +182,7 @@ function reroad(idx){
     }
     if(!is_checked){
         alert("最低一つチェックを入れてください");
-        document.form1.genre[idx-1].checked = true
+        document.form1.genre[idx].checked = true
     }else{
 		url = "study.html?"
 		for(let i = 0 ; i < document.form1.genre.length ; i++){
