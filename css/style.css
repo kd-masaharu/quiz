@@ -1,12 +1,16 @@
 @font-face {
     font-family: 'myfont';
     src: url('../makinas4/Makinas-4-Flat.otf') format('opentype'),
-  }
-body {
-    background: linear-gradient(-225deg, #2cd893 0%, #2f61e2 100%);
-    font-family:"myfont",sans-serif;
-}
-p{
-    font-family:"myfont",sans-serif;
 }
 
+body {
+    background: linear-gradient(-225deg, #2cd893 0%, #2f61e2 100%);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    font-family: "myfont", sans-serif;
+}
+
+p {
+    font-family: "myfont", sans-serif;
+}
