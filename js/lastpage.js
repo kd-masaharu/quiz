@@ -32,3 +32,8 @@ console.log(question_cnt)
 console.log(currect_cnt)
 
 document.querySelector(".totaltext2").textContent = (currect_cnt / question_cnt * 100) + "%"
+
+let link = document.getElementById('x');
+let url = "https://twitter.com/share?url=https://kd-masaharu.github.io/quiz/&text=問題を解きました！正答率は" + (currect_cnt / question_cnt * 100) + "%25です！";
+//href属性の値を書き換える
+link.setAttribute('href', url);
