@@ -10,6 +10,7 @@
 	height: 15%;
 	width: 90%;
 	border-radius: 30px;
+	border: 2px solid #000000;
 }
 .genre button{
 	cursor: pointer;
@@ -18,55 +19,61 @@
 	position: absolute;
 	top: 27.5%;
 	left: 10%;
-	background-color: yellow;
+	background-color: white;
 	height: 12.5%;
 	width: 35%;
 	border-radius: 30px;
+	border: 2px solid #000000;
 }
 .button2{/*法律*/
 	position: absolute;
 	top: 45%;
 	left: 10%;
-	background-color: yellow;
+	background-color: white;
 	height: 12.5%;
 	width: 35%;
 	border-radius: 30px;
+	border: 2px solid #000000;
 }
 .button3{/*選挙*/
 	position: absolute;
 	top: 62.5%;
 	left: 10%;
-	background-color: yellow;
+	background-color: white;
 	height: 12.5%;
 	width: 35%;
 	border-radius: 30px;
+	border: 2px solid #000000;
 }
 .button5{/*海外*/
 	position: absolute;
 	top: 27.5%;
 	left: 55%;
-	background-color: yellow;
+	background-color: white;
 	height: 12.5%;
 	width: 35%;
 	border-radius: 30px;
+	border: 2px solid #000000;
 }
 .button6{/*常識*/
 	position: absolute;
 	top: 45%;
 	left: 55%;
-	background-color: yellow;
+	background-color: white;
 	height: 12.5%;
 	width: 35%;
 	border-radius: 30px;
+	border: 2px solid #000000;
 }
 .button7{/*etc*/
 	position: absolute;
 	top: 62.5%;
 	left: 55%;
-	background-color: yellow;
+	background-color: white;
 	height: 12.5%;
 	width: 35%;
 	border-radius: 30px;
+	border: 2px solid #000000;
 }
 .button4{/*戻る*/
 	position: absolute;
@@ -133,8 +140,8 @@ p {
 	font-size: 48px;
 }
 .genre input:checked+label{
-    background: green;
-    color: black;
+    background:  rgb(39, 172, 217);
+    color: white;
 }
 .genre input{
     display: none;
