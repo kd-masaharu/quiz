@@ -74,11 +74,12 @@
 }
 .finishButton{
     position: absolute;
-	top: 80%;
+	top: 78%;
 	left: 22%;
 	background-color: wheat;
-	height: 5%;
+	height: 7%;
 	width: 11%;
+	font-size: 18px;
     cursor: pointer;
     font-family:"myfont",sans-serif;
     border-radius: 30px;
@@ -105,11 +106,12 @@
 }
 .againButton{
     position: absolute;
-	top: 80%;
+	top: 78%;
 	left: 44%;
 	background-color: wheat;
-	height: 5%;
+	height: 7%;
 	width: 11%;
+	font-size: 18px;
     cursor: pointer;
     font-family:"myfont",sans-serif;
     border-radius: 30px;
@@ -136,11 +138,12 @@
 }
 .snsButton{
     position: absolute;
-	top: 80%;
+	top: 78%;
 	right: 22%;
 	background-color: wheat;
-	height: 5%;
+	height: 7%;
 	width: 11%;
+	font-size: 18px;
     cursor: pointer;
     font-family:"myfont",sans-serif;
     border-radius: 30px;
