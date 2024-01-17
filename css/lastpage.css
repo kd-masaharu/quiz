@@ -17,7 +17,6 @@
 	left: 22%;
 	background-color: white;
 	height: 5%;
-	width: 16%;
     font-size: 30px;
     opacity: 0;
     transform: translateY(100%);
@@ -29,7 +28,6 @@
 	left: 22%;
 	background-color: white;
 	height: 5%;
-	width: 16%;
     opacity: 0;
     transform: translateY(100%);
     animation: fadeInFromBottom 1s forwards;
@@ -40,7 +38,6 @@
 	left: 22%;
 	background-color: white;
 	height: 5%;
-	width: 16%;
     opacity: 0;
     transform: translateY(100%);
     animation: fadeInFromBottom 1s forwards;
@@ -51,7 +48,6 @@
 	left: 22%;
 	background-color: white;
 	height: 5%;
-	width: 16%;
     opacity: 0;
     transform: translateY(100%);
     animation: fadeInFromBottom 1s forwards;
@@ -62,7 +58,6 @@
 	left: 22%;
 	background-color: white;
 	height: 5%;
-	width: 16%;
     opacity: 0;
     transform: translateY(100%);
     animation: fadeInFromBottom 1s forwards;
@@ -73,7 +68,6 @@
 	left: 22%;
 	background-color: white;
 	height: 5%;
-	width: 16%;
     opacity: 0;
     transform: translateY(100%);
     animation: fadeInFromBottom 1s forwards;
@@ -183,7 +177,7 @@
 .totaltext2{
     position: absolute;
 	top: 36%;
-	left: 50%;
+	left: 45%;
     opacity: 0;
     transform: translateY(100%);
     animation-delay: 3s;
@@ -191,7 +185,7 @@
 	background-color: white;
 	height: 10%;
 	width: 27%;
-    font-size: 50px;
+    font-size: 100px;
     text-align: center;
 }
 @keyframes fadeInFromBottom {
